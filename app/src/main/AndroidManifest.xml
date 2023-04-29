@@ -12,6 +12,15 @@
         android:theme="@style/Theme.Monitori"
         tools:targetApi="31">
         <activity
+            android:name=".DoneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CodeActivity"
+            android:exported="false" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>

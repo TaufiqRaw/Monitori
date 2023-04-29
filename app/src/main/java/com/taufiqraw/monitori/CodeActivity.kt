@@ -11,13 +11,14 @@ import android.widget.Button
  * Nama     : Taufiq Ridho Adi Waskita
  * Kelas    : If-9
  * **/
-class WelcomeActivity : AppCompatActivity() {
+
+class CodeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome)
-        findViewById<Button>(R.id.btnMulai).also {
+        setContentView(R.layout.activity_code)
+        findViewById<Button>(R.id.btnMasuk).also {
             it.setOnClickListener {
-                Intent(this, CodeActivity::class.java).also {
+                Intent(this, IdentityActivity::class.java).also {
                     startActivity(it);
                 }
             }
